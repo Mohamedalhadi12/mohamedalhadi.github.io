@@ -1,0 +1,121 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #bba0a0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} 
+/* Här kan du ser rubriken "watch our gallery art" du kan se text typen, färg , storlek, och "absolute" för att texten bli över bilden.*/
+.watch_our_gallery_art {
+    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+    color: #d8d8d8;
+    font-size: 32px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+}
+/*Här är profil namnet. först text typen sen stolek eller size sen "absolute" för att texten bli över bilden. sen placera jag var vill jag har den.*/
+.MN {
+    color: #000;
+font-family: Apple Chancery, cursive;
+font-size: 16px;
+position: absolute;
+top: 33%;
+left: 49.8%;
+transform: translate(-50%, -50%);
+
+}
+/* Text under rubriken som beskriver vad jag vill visar till andra. jag skriv storlek , "absolute" för att texten bli över bilden, sen skriv jag var vill jag placera "under texten". sen lägg jag färgen och i sista text typen.    */
+.underTitle {
+    font-size: 18px;
+    position: absolute;
+    top: 64%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #d8d8d8;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.LinkButton {
+    color: white; /* Textfärg för länken */
+    text-decoration: none; /* Ingen understrykning för länken */
+}
+.poster {
+    max-width: 600px; /* Maximal bredd för postern */
+    background-color: #ffffff; /* Bakgrundsfärg för postern */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Skugga runt postern */
+    padding: 20px; /* Inre utfyllnad för postern */
+    border-radius: 8px; /* Rundade hörn för postern */
+    text-align: center; /* Centrera texten inom postern */
+}
+
+.image {
+    display: block; /* Visa som blockelement */
+    margin: 20px auto; /* Automatisk marginal över och under bilden, centrera horisontellt */
+    max-width: 100%; /* Bilden anpassar sig till föräldreelementets bredd */
+    height: auto; /* Behåll bildens proportioner */
+    border-radius: 8px; /* Rundade hörn för bilden */
+}
+
+/* Stilar för knappar */
+button {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    position: absolute;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 500px;
+    overflow: hidden;
+    background: #338333;
+    color: ghostwhite;
+    top: 80%;
+    left: 45.5%;
+   }
+   
+   /* Stilar för texten inuti knappen */
+   button span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+   }
+   /* Textfärg för texten inuti knappen vid hovring */
+   button:hover span {
+    color: black;
+   }
+   
+   button::before,
+   button::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+   }
+   
+   button::before {
+    content: "";
+    background: #000;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+   }
+   /* Animationseffekt vid hovring för den första dekorativa effekten */
+   button:hover::before {
+    transform: translate3d(100%, 0, 0);
+   }
+   
+ 
+  
